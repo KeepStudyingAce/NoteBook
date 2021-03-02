@@ -32,9 +32,11 @@ class _Week7State extends State<Week7> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Center(
       child: GestureDetector(
-        onTap: (){
-          if(fadeIn) _controller.forward();
-          else _controller.reverse();
+        onTap: () {
+          if (fadeIn)
+            _controller.forward();
+          else
+            _controller.reverse();
           fadeIn = !fadeIn;
         },
         child: FadeTransition(

@@ -11,7 +11,6 @@ class NavigationKeepAlive extends StatefulWidget {
 
 class _NavigationKeepAliveState extends State<NavigationKeepAlive>
     with SingleTickerProviderStateMixin {
-
   final _bottomNavigationColor = Colors.blue;
   int _currentIndex = 0;
   var _controller = PageController(

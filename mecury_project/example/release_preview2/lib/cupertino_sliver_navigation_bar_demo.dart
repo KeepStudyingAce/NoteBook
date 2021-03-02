@@ -3,7 +3,8 @@ import 'package:random_pk/random_pk.dart';
 
 class SliverNavigationBarDemo extends StatefulWidget {
   @override
-  _SliverNavigationBarDemoState createState() => _SliverNavigationBarDemoState();
+  _SliverNavigationBarDemoState createState() =>
+      _SliverNavigationBarDemoState();
 }
 
 class _SliverNavigationBarDemoState extends State<SliverNavigationBarDemo> {
@@ -13,47 +14,47 @@ class _SliverNavigationBarDemoState extends State<SliverNavigationBarDemo> {
     final double height = MediaQuery.of(context).size.height;
     return CupertinoPageScaffold(
         child: NestedScrollView(
-          headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled){
-            return <Widget>[
-              CupertinoSliverNavigationBar(
-                largeTitle: Text('Title'),
-                leading: Text('Leading'),
-                previousPageTitle: "previousPageTitle",
-                middle: Text('middle'),
-                trailing: Icon(CupertinoIcons.search),
-              ),
-            ];
-          },
-          body: CupertinoScrollbar(
-            child: ListView(
-                children: <Widget>[
-                  RandomContainer(
-                    height: height/5,
-                    width: width,
-                  ),
-                  RandomContainer(
-                    height: height/5,
-                    width: width,
-                  ),
-                  RandomContainer(
-                    height: height/5,
-                    width: width,
-                  ),
-                  RandomContainer(
-                    height: height/5,
-                    width: width,
-                  ),
-                  RandomContainer(
-                    height: height/5,
-                    width: width,
-                  ),
-                  RandomContainer(
-                    height: height/5,
-                    width: width,
-                  ),
-                ],
-            ),
+      headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
+        return <Widget>[
+          CupertinoSliverNavigationBar(
+            largeTitle: Text('Title'),
+            leading: Text('Leading'),
+            previousPageTitle: "previousPageTitle",
+            middle: Text('middle'),
+            trailing: Icon(CupertinoIcons.search),
           ),
+        ];
+      },
+      body: CupertinoScrollbar(
+        child: ListView(
+          children: <Widget>[
+            RandomContainer(
+              height: height / 5,
+              width: width,
+            ),
+            RandomContainer(
+              height: height / 5,
+              width: width,
+            ),
+            RandomContainer(
+              height: height / 5,
+              width: width,
+            ),
+            RandomContainer(
+              height: height / 5,
+              width: width,
+            ),
+            RandomContainer(
+              height: height / 5,
+              width: width,
+            ),
+            RandomContainer(
+              height: height / 5,
+              width: width,
+            ),
+          ],
+        ),
+      ),
     ));
   }
 }

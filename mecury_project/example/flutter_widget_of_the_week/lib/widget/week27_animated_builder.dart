@@ -29,8 +29,10 @@ class _Week27State extends State<Week27> with SingleTickerProviderStateMixin {
     return Scaffold(
       body: Center(
         child: GestureDetector(
-          onTap: (){
-            _animationController.forward().then((_)=>_animationController.reverse());
+          onTap: () {
+            _animationController
+                .forward()
+                .then((_) => _animationController.reverse());
           },
           child: AnimatedBuilder(
             animation: _animation,
@@ -40,10 +42,7 @@ class _Week27State extends State<Week27> with SingleTickerProviderStateMixin {
                 child: child,
               );
             },
-            child: SizedBox(
-                height: 200,
-                width: 200,
-                child: FlutterLogo()),
+            child: SizedBox(height: 200, width: 200, child: FlutterLogo()),
           ),
         ),
       ),

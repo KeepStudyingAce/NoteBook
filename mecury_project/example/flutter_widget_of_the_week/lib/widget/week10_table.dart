@@ -20,7 +20,7 @@ class Week10 extends StatelessWidget {
         defaultVerticalAlignment: TableCellVerticalAlignment.bottom,
         border: TableBorder(top: BorderSide(color: Colors.black, width: 48)),
         columnWidths: {
-          0: FractionColumnWidth(0.2),
+          0: FractionColumnWidth(0.1),
           1: FractionColumnWidth(0.3),
         },
         children: [
@@ -46,7 +46,7 @@ class Week10 extends StatelessWidget {
             child: Text("0"),
           ),
           Container(
-            height: 100,
+            height: 150,
             width: 100,
             color: color2,
             alignment: Alignment.center,

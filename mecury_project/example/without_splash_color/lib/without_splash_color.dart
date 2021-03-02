@@ -21,18 +21,17 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       bottomNavigationBar: Theme(
         data: ThemeData(
-            brightness: Theme.of(context).brightness,
-
-            splashColor: Colors.transparent,
-            highlightColor: Colors.transparent,
+          brightness: Theme.of(context).brightness,
+          splashColor: Colors.transparent,
+          highlightColor: Colors.transparent,
         ),
         child: BottomNavigationBar(
-            items: [
-          BottomNavigationBarItem(
-              icon: Icon(Icons.description), title: Text('123')),
-          BottomNavigationBarItem(
-              icon: Icon(Icons.description), title: Text('123')),
-        ],
+          items: [
+            BottomNavigationBarItem(
+                icon: Icon(Icons.description), title: Text('123')),
+            BottomNavigationBarItem(
+                icon: Icon(Icons.description), title: Text('123')),
+          ],
         ),
       ),
     );

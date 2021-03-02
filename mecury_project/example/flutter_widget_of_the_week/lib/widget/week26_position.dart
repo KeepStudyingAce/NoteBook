@@ -23,7 +23,7 @@ class Week26 extends StatelessWidget {
               ),
               Positioned.fill(
                   child: FlutterLogo(
-                colors: Colors.teal,
+                textColor: Colors.teal,
               ))
             ],
           ),

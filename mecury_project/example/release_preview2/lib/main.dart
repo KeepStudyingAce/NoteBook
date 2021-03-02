@@ -16,8 +16,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return new CupertinoApp(
       title: 'Flutter Demo',
-      home: ActionSheetActionDemo(),
+      // home: ActionSheetActionDemo(),
+      // home: NavigationBarDemo(),
+      // home: PickerDemo(),
+      // home: SegmentedControlDemo(),
+      // home: SliverNavigationBarDemo(),
+      // home: TabNavigationDemo(),
+      home: TimerPickerDemo(),
     );
   }
 }
-
